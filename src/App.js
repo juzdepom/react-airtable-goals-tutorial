@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Airtable from "airtable";
-import { baseId, apiKey } from './airtableIds'
+import Goal from "./components/Goal";
+import styled from "styled-components";
+import { GlobalStyle } from "./styles/Global.style";
+import { apiKey, baseId } from "./airtableIds";
+
+
 
 
 // base id appqfpGEd5sP5aLXx
 const base = new Airtable({ apiKey: apiKey }).base(baseId);
+
+const StyledH1 = styled.h1`
+  text-align: center;
+  font-size: 4rem;
+  margin: 1rem 0;
+`;
 
 function App() {
 
@@ -32,8 +43,21 @@ function App() {
   }, []);
 
   return (
-    <div>
-    </div>
+    <>
+      <GlobalStyle />
+      <StyledH1>My Goals</StyledH1>
+      {/* map through the 'goals' data and display */}
+      {goals.map((goal) => (
+        <Goal
+          key={goal.id}
+          goal={goal}
+          // filter through the 'updates' data
+          updates={updates.filter(
+            (update) => update.fields.goalid[0] === goal.id
+          )}
+        />
+      ))}
+    </>
   );
 }
 
