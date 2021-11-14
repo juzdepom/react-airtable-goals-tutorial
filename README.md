@@ -1,8 +1,8 @@
 
 # HOW TO DISPLAY AIRTABLE DATA IN A REACT PROJECT TUTORIAL
 
-## NEXT STEP!! LEARN HOW TO DEPLOY THIS VIA GITHUB PAGES
-https://www.youtube.com/watch?v=F8s4Ng-re0E
+## SEE PROJECT HERE 
+https://juzdepom.github.io/react-airtable-goals-tutorial/
 ## PROJECT SCREENSHOT
 <img src="./readme-files/project.png">
 
