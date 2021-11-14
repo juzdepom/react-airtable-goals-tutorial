@@ -1,6 +1,8 @@
 
 # HOW TO DISPLAY AIRTABLE DATA IN A REACT PROJECT TUTORIAL
 
+## NEXT POTENTIAL STEP
+Create a loading screen while airtable data is loading.
 ## SEE PROJECT HERE 
 https://juzdepom.github.io/react-airtable-goals-tutorial/
 ## PROJECT SCREENSHOT
